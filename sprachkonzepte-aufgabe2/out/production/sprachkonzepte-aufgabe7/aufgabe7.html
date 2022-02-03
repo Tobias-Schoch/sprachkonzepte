@@ -1,0 +1,128 @@
+	<!DOCTYPE html>
+	<html lang="de">
+		<head>
+			<style type="text/css">
+			th,
+			td {
+				border-bottom: thin solid;
+				padding: 4px;
+				text-align: left;
+			}
+
+			td {
+				font-family: monospace;
+			}
+			</style>
+		</head>
+		<body>
+			<h1>Sprachkonzepte, Aufgabe 7</h1>
+				<h2>class java.lang.String</h2>
+				<table>
+					<tr>
+						<th>Interfaces</th>
+			            <th>Methods</th>
+					</tr>
+			        	<tr>
+			        		<td valign="top">
+			        			java.io.Serializable
+			        		</td>
+			        	    <td valign="top">
+			            	</td>
+			        	</tr><tr>
+			        		<td valign="top">
+			        			java.lang.Comparable
+			        		</td>
+			        	    <td valign="top">
+			            		public abstract int java.lang.Comparable.compareTo(java.lang.Object) <br />
+			            	</td>
+			        	</tr><tr>
+			        		<td valign="top">
+			        			java.lang.CharSequence
+			        		</td>
+			        	    <td valign="top">
+			            		public abstract int java.lang.CharSequence.length() <br />public abstract java.lang.String java.lang.CharSequence.toString() <br />public static int java.lang.CharSequence.compare(java.lang.CharSequence,java.lang.CharSequence) <br />public abstract char java.lang.CharSequence.charAt(int) <br />public default boolean java.lang.CharSequence.isEmpty() <br />public default java.util.stream.IntStream java.lang.CharSequence.codePoints() <br />public abstract java.lang.CharSequence java.lang.CharSequence.subSequence(int,int) <br />public default java.util.stream.IntStream java.lang.CharSequence.chars() <br />
+			            	</td>
+			        	</tr><tr>
+			        		<td valign="top">
+			        			java.lang.constant.Constable
+			        		</td>
+			        	    <td valign="top">
+			            		public abstract java.util.Optional java.lang.constant.Constable.describeConstable() <br />
+			            	</td>
+			        	</tr><tr>
+			        		<td valign="top">
+			        			java.lang.constant.ConstantDesc
+			        		</td>
+			        	    <td valign="top">
+			            		public abstract java.lang.Object java.lang.constant.ConstantDesc.resolveConstantDesc(java.lang.invoke.MethodHandles$Lookup) throws java.lang.ReflectiveOperationException <br />
+			            	</td>
+			        	</tr>
+				</table>
+				<h2>interface java.util.Iterator:</h2>
+				<table>
+					<tr>
+			            <th>Methods</th>
+					</tr>
+			        	<tr>
+			            	<td>
+			            		public default void java.util.Iterator.remove() <br />
+			            	</td>
+			            </tr><tr>
+			            	<td>
+			            		public default void java.util.Iterator.forEachRemaining(java.util.function.Consumer) <br />
+			            	</td>
+			            </tr><tr>
+			            	<td>
+			            		public abstract boolean java.util.Iterator.hasNext() <br />
+			            	</td>
+			            </tr><tr>
+			            	<td>
+			            		public abstract java.lang.Object java.util.Iterator.next() <br />
+			            	</td>
+			            </tr>
+				</table>
+				<h2>class java.time.Month</h2>
+				<table>
+					<tr>
+						<th>Interfaces</th>
+			            <th>Methods</th>
+					</tr>
+			        	<tr>
+			        		<td valign="top">
+			        			java.time.temporal.TemporalAccessor
+			        		</td>
+			        	    <td valign="top">
+			            		public default int java.time.temporal.TemporalAccessor.get(java.time.temporal.TemporalField) <br />public abstract long java.time.temporal.TemporalAccessor.getLong(java.time.temporal.TemporalField) <br />public default java.lang.Object java.time.temporal.TemporalAccessor.query(java.time.temporal.TemporalQuery) <br />public default java.time.temporal.ValueRange java.time.temporal.TemporalAccessor.range(java.time.temporal.TemporalField) <br />public abstract boolean java.time.temporal.TemporalAccessor.isSupported(java.time.temporal.TemporalField) <br />
+			            	</td>
+			        	</tr><tr>
+			        		<td valign="top">
+			        			java.time.temporal.TemporalAdjuster
+			        		</td>
+			        	    <td valign="top">
+			            		public abstract java.time.temporal.Temporal java.time.temporal.TemporalAdjuster.adjustInto(java.time.temporal.Temporal) <br />
+			            	</td>
+			        	</tr>
+				</table>
+				<h2>class java.io.File</h2>
+				<table>
+					<tr>
+						<th>Interfaces</th>
+			            <th>Methods</th>
+					</tr>
+			        	<tr>
+			        		<td valign="top">
+			        			java.io.Serializable
+			        		</td>
+			        	    <td valign="top">
+			            	</td>
+			        	</tr><tr>
+			        		<td valign="top">
+			        			java.lang.Comparable
+			        		</td>
+			        	    <td valign="top">
+			            		public abstract int java.lang.Comparable.compareTo(java.lang.Object) <br />
+			            	</td>
+			        	</tr>
+				</table>
+		</body>
+	</html>

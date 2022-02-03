@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/sprachkonzepte-aufgabe2.iml" filepath="$PROJECT_DIR$/sprachkonzepte-aufgabe2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sprachkonzepte-aufgabe3/sprachkonzepte-aufgabe3.iml" filepath="$PROJECT_DIR$/../sprachkonzepte-aufgabe3/sprachkonzepte-aufgabe3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sprachkonzepte-aufgabe4/sprachkonzepte-aufgabe4.iml" filepath="$PROJECT_DIR$/../sprachkonzepte-aufgabe4/sprachkonzepte-aufgabe4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sprachkonzepte-aufgabe5/sprachkonzepte-aufgabe5.iml" filepath="$PROJECT_DIR$/../sprachkonzepte-aufgabe5/sprachkonzepte-aufgabe5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sprachkonzepte-aufgabe6/sprachkonzepte-aufgabe6.iml" filepath="$PROJECT_DIR$/../sprachkonzepte-aufgabe6/sprachkonzepte-aufgabe6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sprachkonzepte-aufgabe7/sprachkonzepte-aufgabe7.iml" filepath="$PROJECT_DIR$/../sprachkonzepte-aufgabe7/sprachkonzepte-aufgabe7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sprachkonzepte-aufgabe8/sprachkonzepte-aufgabe8.iml" filepath="$PROJECT_DIR$/../sprachkonzepte-aufgabe8/sprachkonzepte-aufgabe8.iml" />
+    </modules>
+  </component>
+</project>

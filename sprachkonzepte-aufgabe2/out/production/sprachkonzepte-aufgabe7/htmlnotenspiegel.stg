@@ -1,0 +1,65 @@
+delimiters "$", "$"
+
+classesAndInterfaces(classes) ::= <<
+	<!DOCTYPE html>
+	<html lang="de">
+		<head>
+			<style type="text/css">
+			th,
+			td {
+				border-bottom: thin solid;
+				padding: 4px;
+				text-align: left;
+			}
+
+			td {
+				font-family: monospace;
+			}
+			</style>
+		</head>
+		<body>
+			<h1>Sprachkonzepte, Aufgabe 7</h1>
+			$classes:classes()$
+		</body>
+	</html>
+>>
+
+classes(class) ::= <<
+	$if(class.isClass)$
+	<h2>class $class.classesAndInterfaceName$</h2>
+	$else$
+	<h2>interface $class.classesAndInterfaceName$:</h2>
+	$endif$
+	<table>
+		<tr>
+		    $if(class.isClass)$
+			<th>Interfaces</th>
+			$endif$
+            <th>Methods</th>
+		</tr>
+		$if(class.isClass)$
+        $class.interfaces:interfaces()$
+        $else$
+        $class.methods:methods()$
+        $endif$
+	</table>
+>>
+
+interfaces(interfaces) ::= <<
+	<tr>
+		<td valign="top">
+			$interfaces.interfaceName$
+		</td>
+	    <td valign="top">
+    		$interfaces.interfaceMethods: { method | $method$ $"<br />"$}$
+    	</td>
+	</tr>
+>>
+
+methods(methods) ::= <<
+	<tr>
+    	<td>
+    		$methods: { method | $method$ $"<br />"$}$
+    	</td>
+    </tr>
+>>
