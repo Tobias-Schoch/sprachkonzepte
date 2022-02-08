@@ -10,7 +10,7 @@ public class Aufgabe2a {
         String flags = "[-#+ 0,(]*";
         String width = "\\d*";
         String precision = "[[.]\\d]*";
-        String conversion = "[b|B|h|H|s|S|c|C|d|o|x|X|e|E|f|g|G|a|A|t|T|%|n]*";
+        String conversion = "[b|B|h|H|s|S|c|C|d|o|x|X|e|E|f|g|G|a|A|t|T|%|n]+";
 
         Pattern pattern = Pattern.compile(start_element + argument_index + flags + width + precision + conversion);
         Pattern pattern2 = Pattern.compile("(\\w)\\1+");
