@@ -2,9 +2,17 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Aufgabe2a {
-    public static final String EXAMPLE_TEST = "%1$-02.3dyyy";
+    public static final String EXAMPLE_TEST = "xxx %d yyy%n";
     public static void main(String[] args) {
-        Pattern pattern = Pattern.compile("[/%][0-9$.-]*[a-z]");
+
+        String start_element = "%";
+        String argument_index = "[\\d+$]*";
+        String flags = "[-#+ 0,(]*";
+        String width = "\\d*";
+        String precision = "[[.]\\d]*";
+        String conversion = "[b|B|h|H|s|S|c|C|d|o|x|X|e|E|f|g|G|a|A|t|T|%|n]*";
+
+        Pattern pattern = Pattern.compile(start_element + argument_index + flags + width + precision + conversion);
         Pattern pattern2 = Pattern.compile("(\\w)\\1+");
 
         Matcher format = pattern.matcher(EXAMPLE_TEST);
